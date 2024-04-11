@@ -1,11 +1,12 @@
 using RazorEFDBFirst24Starter.Interfaces;
 using RazorEFDBFirst24Starter.Services.DBServices;
+using RazorEFDBFirst24Starter.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-//services.AddDbContext<Eventmakerdb23Context>();
+builder.Services.AddDbContext<EventMakerDB24Context>();
 builder.Services.AddTransient<IEventService, EventService>();
 builder.Services.AddTransient<ICountryService, CountryService>();
 var app = builder.Build();
