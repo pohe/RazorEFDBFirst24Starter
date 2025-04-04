@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddRazorPages();
-builder.Services.AddDbContext<EventMakerDB24Context>();
+//builder.Services.AddDbContext<EventMakerDB24Context>();
 builder.Services.AddTransient<IEventService, EventService>();
 builder.Services.AddTransient<ICountryService, CountryService>();
 var app = builder.Build();

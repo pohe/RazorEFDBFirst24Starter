@@ -7,25 +7,25 @@ namespace RazorEFDBFirst24Starter.Pages.Countries
 {
     public class CreateCountryModel : PageModel
     {
-        ICountryService repo;
-        [BindProperty]
-        public Country Country { get; set; }
-        public CreateCountryModel(ICountryService repository)
-        {
-            repo = repository;
-        }
-        public IActionResult OnGet()
-        {
-            return Page();
-        }
-        public IActionResult OnPost()
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-            repo.AddCountry(Country);
-            return RedirectToPage("IndexCountry");
-        }
+        //ICountryService repo;
+        //[BindProperty]
+        //public Country Country { get; set; }
+        //public CreateCountryModel(ICountryService repository)
+        //{
+        //    repo = repository;
+        //}
+        //public IActionResult OnGet()
+        //{
+        //    return Page();
+        //}
+        //public IActionResult OnPost()
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+        //    repo.AddCountry(Country);
+        //    return RedirectToPage("IndexCountry");
+        //}
     }
 }
